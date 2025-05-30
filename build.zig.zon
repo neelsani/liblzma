@@ -37,8 +37,8 @@
     // internet connectivity.
     .dependencies = .{
         .upstream = .{
-            .url = "git+https://github.com/tukaani-project/xz#v5.6.4",
-            .hash = "1220b110b8e7113ad2a41d0691bf2eb237d3aac2d174e6920ab2cfa940fce63b90e2",
+            .url = "git+https://github.com/tukaani-project/xz?ref=v5.6.4#ac50df0d89ce73f30430b8174e578071cbb4e056",
+            .hash = "N-V-__8AAEA6TACxELjnETrSpB0Gkb8usjfTqsLRdOaSCrLP",
         },
     },
     .paths = .{
