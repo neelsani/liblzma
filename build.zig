@@ -29,7 +29,12 @@ pub fn build(b: *std.Build) void {
     lib.root_module.addCMacro("HAVE_DECODER_LZMA1", "1");
     lib.root_module.addCMacro("HAVE_DECODER_LZMA2", "1");
     lib.root_module.addCMacro("HAVE_CHECK_CRC32", "1");
+    lib.installHeadersDirectory(
+        upstream.path("src/liblzma/api"),
 
+        "",
+        .{ .include_extensions = &.{".h"} },
+    );
     const arch = target.result.cpu.arch;
 
     // TODO: other archs
